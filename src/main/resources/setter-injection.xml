@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person_Bhanu" class="com.example.di.setterInjection.Person">
+        <property name="name" value="Bhanu Priya"></property>
+        <property name="address" ref="address_Bhanu"></property>
+    </bean>
+
+    <bean id="address_Bhanu" class="com.example.di.setterInjection.Address">
+        <property name="city" value="Hoshiarpur"></property>
+    </bean>
+
+</beans>
