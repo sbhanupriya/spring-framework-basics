@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id ="car_hyundai" class="com.example.di.constructorInjection.Car">
+        <constructor-arg ref="engine_petrol"></constructor-arg>
+        <constructor-arg index="2" value="2019"></constructor-arg>
+        <constructor-arg index="0" value="Hyundai"></constructor-arg>
+
+    </bean>
+
+    <bean id ="engine_petrol" class="com.example.di.constructorInjection.Engine">
+        <constructor-arg value="Petrol"></constructor-arg>
+    </bean>
+
+</beans>
