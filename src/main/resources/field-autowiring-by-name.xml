@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id ="musicplayer" class="com.example.di.fieldautowiring.MusicPlayer" autowire="byName">
+    </bean>
+    <bean id ="sound" class="com.example.di.fieldautowiring.Headphone" ></bean>
+    <bean id ="sound_earpods" class="com.example.di.fieldautowiring.Earpods" ></bean>
+
+</beans>
