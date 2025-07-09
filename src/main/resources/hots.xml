@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="notification_1" class="com.example.di.hots.NotificationService" autowire="byName">
+       <constructor-arg ref="sms_1">
+       </constructor-arg>
+       <property name="emailSender" ref="sms_1"></property>
+   </bean>
+
+    <bean id="emailSender" class="com.example.di.hots.EmailSender"></bean>
+    <bean id="sms_1" class="com.example.di.hots.SmsSender"></bean>
+
+</beans>
