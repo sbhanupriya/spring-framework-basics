@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="service" class="com.example.di.primarybean.PaymentService" autowire="byType">
+    </bean>
+
+    <bean id="a" class="com.example.di.primarybean.PaypalPayment"></bean>
+    <bean id="b" class="com.example.di.primarybean.StripePayment" primary="true" ></bean>
+
+</beans>
