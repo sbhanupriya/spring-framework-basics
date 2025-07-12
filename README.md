@@ -2,8 +2,6 @@
 
 This project explains the key concepts of Spring Framework, mainly focusing on IoC and Dependency Injection with simple code examples.
 
----
-
 ## 📚 Topics Covered
 
 ### 🔧 Configuration Styles
